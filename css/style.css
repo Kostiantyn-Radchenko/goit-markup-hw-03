@@ -6,7 +6,7 @@
 --white-text-color: #ffffff;
 --logo-primary-color: #000000;
 --active-color:#2196f3;
-outline: 2px solid tomato;
+
 font-family: 'Raleway',   sans-serif;
 font-family: 'Roboto', sans-serif;
 
@@ -21,20 +21,12 @@ font-family: 'Roboto', sans-serif;
   --active-color: #2196f3;
 }
 /* tag configuration */
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+li {
+  list-style-type: none;
 }
 a {
   text-decoration: none;
 }
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-/* body section */
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -43,23 +35,19 @@ body {
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
+/* header section */
 
-.container {
-  outline: 2px solid tomato;
-  width: 1170px;
-  margin: 0 auto;
-}
 /* logo section */
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  color: var(--active-color);
+  color: var(--logo-primary-color);
 }
 
-.logo-secondary {
-  color: var(--logo-primary-color);
+.logo-name {
+  color: var(--active-color);
 }
 .logo:hover,
 .logo:focus {
@@ -98,30 +86,22 @@ body {
 
 /* hero section */
 .hero {
-  text-align: center;
   background-color: var(--footer-bgc-color);
 }
-.hero .title {
-  margin-top: 0;
-  margin-bottom: 30px;
+.hero > .title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.37;
-
+  text-align: center;
   letter-spacing: 0.06em;
   color: var(--white-text-color);
 }
 
 /* button section */
 .btn {
-  padding: 11px 32px;
-  text-align: center;
-  border-color: transparent;
-  border-radius: 4px;
-  min-width: 200px;
   cursor: pointer;
 }
-.hero .btn {
+.hero > .btn {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 16px;
@@ -131,17 +111,7 @@ body {
   background-color: var(--active-color);
 }
 /* main text */
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.section.no-padding {
-  padding-top: 0;
-  padding-bottom: 0;
-}
 .section .title {
-  margin-top: 0;
-  margin-bottom: 50px;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 36px;
@@ -150,8 +120,6 @@ body {
   color: var(--title-color);
 }
 .section .subtitle {
-  margin-top: 0;
-  margin-bottom: 10px;
   font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -159,23 +127,14 @@ body {
   color: var(--title-color);
 }
 .section .subtitle.teams {
-  margin-top: 0;
-  margin-bottom: 10px;
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
 }
-
 .section .text {
-  margin-top: 0;
-  margin-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
-}
-.featurse p {
-  margin-top: 0;
-  margin-bottom: 0;
 }
 .hero .title,
 .featurse .subtitle {
@@ -188,15 +147,11 @@ body {
 }
 
 /* logo footer */
-.container.footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
 .footer .logo {
-  color: var(--active-color);
-}
-.footer .logo-secondary {
   color: var(--white-text-color);
+}
+.logo.name {
+  color: var(--active-color);
 }
 
 /* address section */
@@ -209,8 +164,6 @@ body {
   color: var(--white-text-color);
 }
 .address .link {
-  display: inline-block;
-  margin-top: 9px;
   color: var(--contacts-footer-color);
 }
 .address .link:hover,
