@@ -1,0 +1,204 @@
+/* 
+--accent-color: #757575;
+--title-color:#212121;
+--contacts-footer-color: rgb(255, 255, 255, 0.6);
+--footer-bgc-color: #2f303a;
+--white-text-color: #ffffff;
+--logo-primary-color: #000000;
+--active-color:#2196f3;
+
+font-family: 'Raleway',   sans-serif;
+font-family: 'Roboto', sans-serif;
+
+*/
+:root {
+  --accent-color: #757575;
+  --title-color: #212121;
+  --contacts-footer-color: rgb(255, 255, 255, 0.6);
+  --footer-bgc-color: #2f303a;
+  --white-text-color: #ffffff;
+  --logo-primary-color: #000000;
+  --active-color: #2196f3;
+}
+/* tag configuration */
+li {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+/* header section */
+
+/* logo section */
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--logo-primary-color);
+}
+
+.logo-name {
+  color: var(--active-color);
+}
+.logo:hover,
+.logo:focus {
+  color: var(--active-color);
+}
+
+/* nav menu section */
+.pagination .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+}
+.pagination .link:hover,
+.pagination .link:focus {
+  color: var(--active-color);
+}
+.pagination .link.current {
+  color: var(--active-color);
+}
+
+/* contacts section */
+.contacts .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+}
+.contacts .link:hover,
+.contacts .link:focus {
+  color: var(--active-color);
+}
+/* main section */
+
+/* hero section */
+.hero {
+  background-color: var(--footer-bgc-color);
+}
+.hero > .title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.37;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-text-color);
+}
+
+/* button section */
+.btn {
+  cursor: pointer;
+}
+.hero > .btn {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--white-text-color);
+  background-color: var(--active-color);
+}
+/* main text */
+.section .title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--title-color);
+}
+.section .subtitle {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.15;
+  color: var(--title-color);
+}
+.section .subtitle.teams {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+.section .text {
+  font-size: 16px;
+  line-height: 1.19;
+}
+.hero .title,
+.featurse .subtitle {
+  text-transform: uppercase;
+}
+
+/* footer section */
+.footer {
+  background-color: var(--footer-bgc-color);
+}
+
+/* logo footer */
+.footer .logo {
+  color: var(--white-text-color);
+}
+.logo.name {
+  color: var(--active-color);
+}
+
+/* address section */
+.address {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.72;
+  color: var(--white-text-color);
+}
+.address .link {
+  color: var(--contacts-footer-color);
+}
+.address .link:hover,
+.address .link:focus {
+  color: var(--active-color);
+}
+
+/* portofolio section */
+
+/* portofolio button */
+.portofolio-section .btn {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+  background-color: var(--white-text-color);
+}
+.portofolio-section .btn:hover,
+.portofolio-section .btn:focus {
+  color: var(--white-text-color);
+  background-color: var(--active-color);
+}
+.portofolio-section .title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+}
+.portofolio-section .text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--accent-color);
+}
