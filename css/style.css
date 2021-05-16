@@ -20,6 +20,7 @@ font-family: 'Roboto', sans-serif;
   --white-text-color: #ffffff;
   --logo-primary-color: #000000;
   --active-color: #2196f3;
+  --border-bottom-color: #ececece;
 }
 /* tag configuration */
 li {
@@ -64,6 +65,9 @@ body {
 .header .container {
   display: flex;
   justify-content: space-between;
+}
+.header {
+  border-bottom: 1px solid var(--border-bottom-color);
 }
 .navigation {
   display: flex;
