@@ -262,6 +262,10 @@ body {
 .footer {
   background-color: var(--footer-bgc-color);
 }
+.footer .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
 /* logo footer */
 .footer .logo {
@@ -270,9 +274,13 @@ body {
 .logo.name {
   color: var(--active-color);
 }
+.footer-logo {
+  margin-bottom: 20px;
+}
 
 /* address section */
 .address {
+  margin-bottom: 9px;
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -280,12 +288,15 @@ body {
   line-height: 1.72;
   color: var(--white-text-color);
 }
-.address .link {
+.footer .link {
   color: var(--contacts-footer-color);
 }
-.address .link:hover,
-.address .link:focus {
+.footer .link:hover,
+.footer .link:focus {
   color: var(--active-color);
+}
+.footer-list .item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 /* portofolio section */
