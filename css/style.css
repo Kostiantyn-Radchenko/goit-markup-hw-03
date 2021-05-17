@@ -207,14 +207,16 @@ body {
 }
 
 /* soft skills */
+
+.featurse .subtitle {
+  margin-bottom: 10px;
+}
+
 .container .featurse {
   display: flex;
   margin-left: -30px;
 }
 
-.featurse .subtitle {
-  margin-bottom: 10px;
-}
 .featurse .item {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
@@ -300,9 +302,22 @@ body {
 }
 
 /* portofolio section */
+.portofolio-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 /* portofolio button */
+.portofolio-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
 .portofolio-section .btn {
+  max-width: 145px;
+  padding: 6px 22px;
+  border-color: transparent;
+  border-radius: 4px;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -317,6 +332,7 @@ body {
   background-color: var(--active-color);
 }
 .portofolio-section .title {
+  margin-bottom: 4px;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -329,4 +345,20 @@ body {
   font-size: 16px;
   line-height: 1.88;
   color: var(--accent-color);
+}
+/* portofolio content section */
+.portofolio-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+.portofolio-content .item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.portofolio-content .card-content {
+  padding: 20px 24px;
+  text-align: start;
 }
