@@ -62,6 +62,8 @@ body {
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
   /* outline: 2px solid tomato; */
 }
 /* header section */
@@ -269,11 +271,20 @@ body {
 }
 
 /* logo footer */
+.footer .container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .footer .logo {
+  padding-top: 0;
+  padding-bottom: 0;
   color: var(--white-text-color);
 }
 .logo.name {
   color: var(--active-color);
+}
+.logo-footer {
+  margin-bottom: 20px;
 }
 
 /* address section */
@@ -292,11 +303,22 @@ body {
 .address .link:focus {
   color: var(--active-color);
 }
-
+.adr-str {
+  margin-bottom: 9px;
+}
+.address-list .item:first-child {
+  margin-bottom: 9px;
+}
 /* portofolio section */
-
+.portofolio .container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* portofolio button */
 .portofolio-section .btn {
+  padding: 6px 22px;
+  border-color: transparent;
+  border-radius: 4px;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -309,6 +331,14 @@ body {
 .portofolio-section .btn:focus {
   color: var(--white-text-color);
   background-color: var(--active-color);
+}
+.portofolio-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.portofolio-list .item + .item {
+  margin-left: 9px;
 }
 .portofolio-section .title {
   font-family: 'Roboto', sans-serif;
@@ -323,4 +353,20 @@ body {
   font-size: 16px;
   line-height: 1.88;
   color: var(--accent-color);
+}
+/* portofolio content */
+.portfolio-content {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-bottom: -30px;
+}
+.portfolio-content .item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+.portfolio-content .card-content {
+  text-align: start;
+  padding: 20px 24px;
 }
