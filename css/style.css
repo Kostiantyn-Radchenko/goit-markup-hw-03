@@ -6,7 +6,7 @@
 --white-text-color: #ffffff;
 --logo-primary-color: #000000;
 --active-color:#2196f3;
-
+--border-bottom-color: #ececece;
 font-family: 'Raleway',   sans-serif;
 font-family: 'Roboto', sans-serif;
 
@@ -21,6 +21,8 @@ font-family: 'Roboto', sans-serif;
   --logo-primary-color: #000000;
   --active-color: #2196f3;
   --border-bottom-color: #ececece;
+  --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 /* tag configuration */
 li {
@@ -55,6 +57,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
+/* container */
 .container {
   width: 1200px;
   margin-left: auto;
@@ -204,29 +207,34 @@ body {
   text-transform: uppercase;
 }
 /* soft skills section */
+
+.featurse .subtitle {
+  margin-bottom: 10px;
+}
 .container .featurse {
   display: flex;
   padding-top: 94px;
   padding-bottom: 94px;
+  margin-left: -30px;
 }
-.featurse .subtitle {
-  margin-bottom: 10px;
-}
-.featurse .item + .item {
+.featurse .item {
+  flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
 }
 /* our work section */
 .container .our-work {
   display: flex;
   padding-bottom: 94px;
-  justify-content: space-between;
+  margin-left: -30px;
+}
+.our-work .item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
 }
 .container.work .title {
   padding-bottom: 50px;
 }
-.container.work .item + .item {
-  margin-left: 30px;
-}
+
 /* our teams section */
 .container.teams {
   padding-top: 94px;
@@ -237,11 +245,23 @@ body {
 }
 .teams.list {
   display: flex;
-
-  justify-content: space-between;
+  margin-left: -30px;
 }
-.teams .item + .item {
+
+.teams .item {
+  flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
+}
+.subtitle.teams {
+  margin-bottom: 10px;
+}
+.card {
+  box-shadow: var(--card-shadow);
+  border-radius: 0px 0px 4px 4px;
+}
+.card-content {
+  padding: 30px 61px;
+  text-align: center;
 }
 /* footer section */
 .footer {
