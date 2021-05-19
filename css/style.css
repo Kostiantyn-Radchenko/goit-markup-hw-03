@@ -25,6 +25,7 @@ font-family: 'Roboto', sans-serif;
     0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   --card-border-radius: 0px 0px 4px 4px;
   --card-border-color: #eeeeee;
+  --hero--bgc-color: #c4c4c4;
 }
 /* tag configuration */
 li {
@@ -82,11 +83,11 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
-  color: var(--logo-primary-color);
+  color: var(--active-color);
 }
 
 .logo-name {
-  color: var(--active-color);
+  color: var(--logo-primary-color);
 }
 .logo:hover,
 .logo:focus {
@@ -147,7 +148,7 @@ body {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  background-color: var(--footer-bgc-color);
+  background-color: var(--hero--bgc-color);
 }
 .hero .title {
   margin-bottom: 30px;
@@ -277,10 +278,10 @@ body {
 
 /* logo footer */
 .footer .logo {
-  color: var(--white-text-color);
+  color: var(--active-color);
 }
 .logo.name {
-  color: var(--active-color);
+  color: var(--white-text-color);
 }
 .footer-logo {
   margin-bottom: 20px;
